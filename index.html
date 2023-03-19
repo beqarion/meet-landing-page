@@ -1,31 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <!-- fonts-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
   <title>Frontend Mentor | Meet landing page</title>
 </head>
+
 <body>
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
-
-  Download v1.3
-  What is it?
-
-  01
-  Built for modern use
-
-  Smarter meetings, all in one place
-
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
-
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-
-  Download v1.3
+  <header class="header">
+    <div class="section-center header-center">
+      <img src="./assets/logo.svg" alt="" class="img logo-img">
+    </div>
+  </header>
+  <!-- hero section -->
+  <section class="hero-section">
+    <div class="section-center hero-center">
+      <img src="./assets/desktop/image-hero-left.png" alt="" class="img bg-img-desktop bg-img-left">
+      <img src="./assets/desktop/image-hero-right.png" alt="" class="img bg-img-desktop bg-img-right">
+      <img src="./assets/tablet/image-hero.png" alt="" class="img bg-img-mobile">
+      <div class="hero-banner section-center">
+        <h1 class="hero-title">
+          Group Chat <br> for Everyone
+        </h1>
+        <p class="hero-text">
+          Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+        </p>
+        <div class="hero-btn-container">
+          <button class="btn dwnld-btn btn-cyan">Download <span>v1.3</span></button>
+          <button class="btn info-btn btn-violet">What is it?</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of hero section -->
+  <!-- features section -->
+  <section class="section features-section">
+    <div class="section-center">
+      <!-- number -->
+      <div class="number-decoration-container">
+        <div class="vertical-line"></div>
+        <p class="number num-one">01</p>
+      </div>
+      <!-- images -->
+      <div class="features-images-container">
+        <img class="img features-img" src="./assets/desktop/image-woman-in-videocall.jpg" alt="">
+        <img class="img features-img" src="./assets/desktop/image-women-videochatting.jpg" alt="">
+        <img class="img features-img" src="./assets/desktop/image-men-in-meeting.jpg" alt="">
+        <img class="img features-img" src="./assets/desktop/image-man-texting.jpg" alt="">
+      </div>
+      <!-- texts -->
+      <div class="features-texts-container">
+        <p class="feature-overline">
+          Built for modern use
+        </p>
+        <h2 class="feature-title">
+          Smarter meetings, all in one place
+        </h2>
+        <p class="feature-text">
+          Send messages, share files, show your screen, and record your meetings — all in one
+          workspace. Control who can join with invite-only team access, data encryption, and data export.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- end of features section -->
+  <!-- call to action section -->
+  <section class="cta-section">
+    <div class="section-center cta-center">
+      <!-- number -->
+      <div class="number-decoration-container">
+        <div class="vertical-line"></div>
+        <p class="number num-two">02</p>
+      </div>
+      <!-- cta card -->
+      <article class="cta-card">
+        <img src="./assets/mobile/image-footer.jpg" alt="girl listens music" class="img cta-bg-img">
+        <div class="cta-card-info section-center">
+          <h2 class="cta-title">Experience more <br> together</h2>
+          <p class="cta-text">
+            Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+          </p>
+          <button class="btn cta-btn btn-violet">Download <span>v1.3</span></button>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- end of call to action section -->
 </body>
+
 </html>
